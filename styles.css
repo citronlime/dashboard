@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1{
+    font-size: 5rem;
+}
+
+body {
+    margin:0;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    opacity:0.8;
+   font-family: 'Roboto Condensed', sans-serif;;
+
+    text-shadow: 0px 0px 1px #000;
+
+}
+main {
+padding:15px;
+    /*max-width:inherit;*/
+  /*  width:90%*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.author{
+    font-size: 1rem;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+.flex-center{
+    justify-content: center;
+}
+flex-end{
+    justify-content: flex-end;
+}
+.crypto{
+    display:flex;
+    align-items:center;
+    font-size: 1.6rem;
+    margin-bottom:10px;
+}
+.crypto span {
+    margin-left: 10px;
+}
+.crypto-price p{
+    margin:0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.weather{
+    display:flex;
+    flex-wrap: wrap;
+align-items: center;
+justify-content: flex-end;
+
+    height:100px;
+
+}
+.city {
+    width:100%;
+    text-align: right;
+    margin:0;
+    margin-top:-30px;
+    font-size: 1.2rem;
+
+}
+.temp{
+    font-size: 1.7rem;
+    margin: 0;
+    margin-left:5px
+
+}
+.weather > img{
+    width:70px;
+}
+.quote{
+    font-size: 1.4rem;
+    width: 40%;
+    text-align: center;
+line-height: 1.3;
+    font-weight:400;
+    color:white
+
+}
+.quote p::before, .quote p::after{
+    content:'"';
+    font-size: 2rem;
+    color:red;
+}
+
