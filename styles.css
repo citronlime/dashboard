@@ -23,7 +23,7 @@ body {
     opacity:0.8;
    font-family: 'Roboto Condensed', sans-serif;;
 
-    text-shadow: 0px 0px 1px #000;
+    text-shadow: 0px 2px 3px #000;
 
 }
 main {
@@ -45,7 +45,7 @@ padding:15px;
 .flex-center{
     justify-content: center;
 }
-flex-end{
+.flex-end{
     justify-content: flex-end;
 }
 .crypto{

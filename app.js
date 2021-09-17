@@ -20,7 +20,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     .then(data => {
         let imgUrl = data.urls.full
         document.body.style.backgroundImage = `url(${imgUrl})`
-        author.textContent = `By: ${data.user.name}`
+        author.textContent = `Photo by: ${data.user.name}`
     })
     .catch(err => {
         console.log("error occured")
