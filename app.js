@@ -68,7 +68,7 @@ navigator.geolocation.getCurrentPosition(position => {
         .then(data => {
 
             let icon = data.weather[0].icon
-            let iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+            let iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
             weatherDisplay.innerHTML = `
                 <img src="${iconUrl}">
                 <p class="temp">${Math.floor(data.main.temp)}º</p>
@@ -81,7 +81,7 @@ navigator.geolocation.getCurrentPosition(position => {
     })
 });
 //CHUCK NORRIS JOKES API
-fetch("http://api.icndb.com/jokes/random")
+fetch("https://api.icndb.com/jokes/random")
     .then(res => res.json())
     .then(data => {
         quote.innerHTML = `
